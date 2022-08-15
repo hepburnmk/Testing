@@ -1,0 +1,27 @@
+capital = input("Whats is the capital of Canada: ")
+guesses = 1
+capital = capital.lower()
+
+while capital != "ottawa":
+    capital = input("Guess again: ")
+    guesses = guesses + 1
+    if guesses >= 4:
+        print("It's taken you too many guesses")
+        break
+
+if guesses <= 3:
+    print("Well done, the capital is "  + capital +
+        " It took you " + str(guesses) + " guesses")
+
+
+initialSalesGoal = 2000
+multiplier = 100
+offMonth = True
+
+
+for monthlyGoal in range (1,13):
+    if monthlyGoal == 6:
+        print("\nno goal for month 6")
+        continue
+    monthlySalesGoal = initialSalesGoal + (monthlyGoal * multiplier)
+    print("\nYour sales goal for month", monthlyGoal, "is", monthlySalesGoal)
