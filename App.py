@@ -13,7 +13,7 @@ patient_name = "John Smith"
 age1 = 20
 new_patient = True
 
-# Receiving input, Concatenation
+# Receiving input, Concatenation - this must be a string to concantenate
 
 name3 = input("What is your name? ")
 print("Hello " + name3)
